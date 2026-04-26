@@ -1,0 +1,927 @@
+:root {
+    --primary-color: #F0A500;
+    --white-color: #FFFFFF;
+    --primary-text-color: #0D0F11;
+    --special-card-color: #FFFFFF66;
+}
+
+/* GLOBAL STYLES */
+body {
+    background-color: whitesmoke;
+    max-width: 100%;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    outline: 1px solid red;
+}
+
+h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--white-color);
+}
+
+ul {
+    display: flex;
+    gap: 2.5em;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+img {
+    /* width: 100%;
+    height: 100%; */
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 0.5em;
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    height: 64px;
+    padding-inline: 1.5625em;
+    color: var(--white-color);
+    margin-right: 1.125em;
+}
+
+.secondary-button {
+    background-color: var(--white-color);
+    height: 64px;
+    padding-inline: 1.5625em;
+    color: var(--primary-text-color);
+}
+
+.special-text {
+    color: var(--primary-color);
+}
+
+.white-text {
+    color: var(--white-color);
+}
+
+/* HEADER STYLES */
+
+
+header {
+    height: 100vh;
+}
+
+nav {
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 4.37em;
+    align-items: center;
+    height: 10%;
+}
+
+nav>ul>li>a {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+.logo-container {
+    width: 100%;
+    max-width: 70px;
+    height: 86px;
+}
+
+.nav-button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    height: 48px;
+    padding-inline: 1.125em;
+}
+
+.hero-section {
+    height: 90%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(./assets/images/cooking-and-cleaning-people.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-inline: 4.37em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5em;
+}
+
+.text-content {
+    width: 50%;
+}
+
+.text-content>p {
+    font-size: 1.625rem;
+    color: var(--white-color);
+    font-weight: 500;
+    line-height: 1.8;
+    margin-top: 1.5em;
+}
+
+/* .text-content>p {
+    font-size: 1.625rem;
+    color: var(--white-color);
+    font-weight: 500;
+    line-height: 1.8;
+    margin-top: 1.5em;
+} */
+
+
+/* Main Sections */
+/* what gigsta does */
+
+#what-gigsta-does {
+    background-color: #f0f0f0;
+    padding-block: 3.75em;
+    padding-inline: 4.375em;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title>h2 {
+    font-size: 3.75rem;
+    color: black;
+    font-weight: 700;
+}
+
+.section-title>p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 180%;
+    color: #535353;
+}
+
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    gap: 50px;
+}
+
+.card {
+    margin-bottom: 24px;
+    padding-inline: 24px;
+    padding-block: 40px;
+    /* width: 400px; */
+    max-width: 25rem;
+    height: auto;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+}
+
+.white-card {
+    background-color: #FFFFFF;
+}
+
+.yellow-card {
+    background-color: var(--primary-color);
+}
+
+.card>h3 {
+    color: #0D0F11;
+    line-height: 180%;
+    font-weight: 600;
+    font-size: 1.625rem;
+    margin-top: 1em;
+}
+
+.card>p {
+    font-size: 1.325rem;
+    line-height: 180%;
+    color: #0D0F11;
+    margin-top: 18px;
+}
+
+
+.yellow-card h3,
+.yellow-card p {
+    color: #FFFFFF;
+}
+
+.card-image-container {
+    width: 72px;
+    height: 72px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+/* Our services section */
+.our-services {
+    background-color: var(--white-color);
+    /* width: inherit; */
+    width: 100%;
+    /* height: 47.43rem; */
+    /* height: 759px; */
+    margin: 3.75rem 0;
+    border-radius: 12px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    /* height: 39.94rem; */
+    margin: 0rem 4.38rem;
+    margin-top: 2.75rem;
+}
+
+.services-text {
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+}
+
+.services-text>h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.services-text>p {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 180%;
+    letter-spacing: 0%;
+    /* padding: 0 110px; */
+    /* text-align: center; */
+}
+
+.services-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 3.13rem;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.63rem;
+    /* width: 38.75rem; */
+    height: 23.19rem;
+    padding: 2.5rem 1.5rem;
+    border-radius: 24px;
+    color: var(--white-color);
+    padding-top: 11.31rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card1 {
+    background-image: url(./assets/images/cleaning-people.png);
+}
+
+.service-card2 {
+    background-image: url(./assets/images/cooking.png);
+}
+
+.services-cards>.service-card>h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.services-cards>.service-card>p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+/* How Gigsta works section */
+.how-gigsta-works {
+    background-color: var(--primary-color);
+    margin: 3.75rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 12px;
+    /* height: 61.75rem; */
+    /* width: inherit; */
+    width: 100%;
+    align-items: center;
+}
+
+.works-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 81.25rem;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.works-text>h1 {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.works-text>p {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 180%;
+    letter-spacing: 0%;
+}
+
+.works-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    /* width: 100%; */
+}
+
+.steps {
+    width: 100%;
+    max-width: 26.25rem;
+    height: 30.63rem;
+    border-radius: 12px;
+    background-color: var(--special-card-color);
+    align-items: center;
+    text-align: center;
+}
+
+.steps>img {
+    position: relative;
+    top: 80px;
+    left: 12.5px;
+    height: 60px;
+    width: 60px;
+}
+
+.steps>h3 {
+    position: relative;
+    top: 104px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.steps>p {
+    position: relative;
+    top: 128px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 180%;
+    letter-spacing: 0%;
+}
+
+.number {
+    background-color: var(--primary-color);
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    width: 90px;
+    height: 84px;
+    padding: 18px 23px;
+    position: relative;
+    top: 230px;
+    margin: 0 165px;
+}
+
+.number>h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.works-button {
+    background-color: var(--primary-color);
+    height: 64px;
+    padding-inline: 1.5625em;
+    color: var(--white-color);
+    margin-right: 1.125em;
+    border: 1px;
+    border-radius: 8px;
+}
+
+/* Testimonials */
+.testimonials {
+    /* width: inherit; */
+    width: 100%;
+    /* height: 64.25rem; */
+    margin: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+    text-align: center;
+}
+
+.testimonials-text {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* width: 932px; */
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.testimonials-logo {
+    background-color: #F0A5001F;
+    display: flex;
+    flex-direction: row;
+    width: 287px;
+    /* width: fit-content; */
+    height: 72px;
+    border-radius: 44px;
+    padding: 12px 24px;
+    gap: 10px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonials-logo>h2 {
+    font-weight: 32px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    color: var(--primary-color);
+}
+
+.testimonials-text>h2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    color: var(--primary-text-color);
+}
+
+.testimonials-text>p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    color: #535353;
+}
+
+.testimonials-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    height: fit-content;
+    justify-content: space-between;
+}
+
+.testimonial-card>img {
+    height: 7.5rem;
+    width: 7.5rem;
+    position: relative;
+    top: 40px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 544px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.testimonial-card>h3 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
+}
+
+#stars {
+    height: 24px;
+    width: 136px;
+    position: relative;
+    top: 92px;
+    margin: 0 auto;
+}
+
+.testimonial-card>p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: relative;
+    top: 116px;
+    margin: 0 auto;
+    /* width: 372px; */
+    height: 144px;
+    width: 100%;
+    max-width: 372px;
+}
+
+#quote {
+    width: 100px;
+    height: 61px;
+    position: relative;
+    top: 156px;
+    margin: 0 auto;
+}
+
+
+/* Frequently asked questions */
+.faq {
+    background-color: var(--primary-color);
+    /* width: inherit; */
+    width: 100%;
+    /* height: 70.75rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    border-radius: 12px;
+    /* padding: 3.75rem 4.38rem; */
+}
+
+.faq-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 81.25rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.faq-text>h1 {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.faq-questions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 862px;
+    margin: 0 auto;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 0.63rem;
+    height: 7.75;
+    width: 100%;
+    max-width: 81.25rem;
+    background-color: #FFFFFF66;
+    padding: 1.81rem 1.5rem;
+}
+
+.question>span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 44px;
+}
+
+.question>span>h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.arrow {
+    width: 44px;
+    height: 30px;
+}
+
+/* Footer section  */
+footer {
+    margin-top: 80px;
+}
+
+.footer-links {
+    /* background-color: blue; */
+    /* height: 379px;
+    width: 1300px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 70px;
+    /* margin: 0 auto; */
+}
+
+.links>ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    list-style-type: none;
+    margin-top: 40px;
+
+}
+
+.links>ul>li {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.links>h3>span {
+    display: inline-block;
+    width: 4px;
+    height: 20px;
+    background: var(--primary-text-color);
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.links>h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.subscribe>p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    max-width: 100%;
+    width: 100%;
+    height: 78px;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: row;
+    /* height: 81px;
+    width: 448px;
+    justify-content: space-between; */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.subscribe-section>input {
+    border: none;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    flex: 1;
+}
+
+.subscribe-section>button {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 0;
+}
+
+/* Gigsta Info */
+.gigsta-info {
+    background-color: #F0A50033;
+    /* height: 138px; */
+    padding: 34px 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright>span {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 468px;
+    /* line-break: strict; */
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 9.56rem;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-content {
+        width: 80%;
+    }
+
+    .text-content>p {
+        font-size: 1rem;
+    }
+
+    .section-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+    ul,
+    .nav-button {
+        display: none;
+    }
+
+    .logo-container {
+        width: 100%;
+        max-width: 50px;
+        height: auto;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-title p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding-inline: 1em;
+    }
+
+    p {
+        line-break: strict;
+        /* word-wrap: break-word;
+        overflow-wrap: break-word; */
+    }
+
+    .text-content {
+        width: 100%;
+    }
+
+
+    .hero-section {
+        padding-inline: 1em;
+    }
+
+    .button-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .primary-button,
+    .secondary-button {
+        padding-inline: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*  */
+    .number {
+        margin: 0 auto;
+        /* top: 180px; */
+    }
+
+    .services {
+        gap: 300px;
+        /* gap: 2rem; */
+    }
+
+    .services-text>p {
+        width: 100%;
+        line-break: strict;
+        /* word-wrap: break-word;
+        overflow-wrap: break-word; */
+    }
+
+    .services-cards {
+        flex-direction: column;
+    }
+
+    .works-cards {
+        flex-direction: column;
+
+    }
+
+    .testimonials {
+        width: 100%;
+        /* margin: 60px 40px; */
+        margin: 60px 1rem;
+    }
+
+    .testimonials-cards {
+        flex-direction: column;
+        gap: 1.25rem;
+        margin: 0;
+    }
+
+    .testimonial-card {
+        margin: 0;
+    }
+
+    .testimonial-card>p {
+        width: 100%;
+        /* width: 90%; */
+        /* max-width: 100%; */
+        /* max-width: 372px; */
+        padding-inline: 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 3.5rem;
+        margin: 0 1.5rem;
+        /* margin: 0 1rem; */
+    }
+
+    .subscribe>p {
+        width: 100%;
+        height: auto;
+    }
+
+    .gigsta-info {
+        flex-direction: column;
+        gap: 1.5rem;
+        /*  */
+        /* padding: 2rem 1rem; */
+    }
+
+    .info {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    /* .faq{
+        width: 480px;
+    } */
+}
